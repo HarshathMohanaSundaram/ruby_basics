@@ -38,6 +38,28 @@ ruby "Day 2/closure.rb"
 ```
 
 
+**Day 3**
+- **Day3.md**: [Day 3/Day3.md](Day%203/Day3.md) — Day 3 notes: Ruby metaprogramming, `instance_eval`, `class_eval`, `define_method`, DSLs, and dynamic method creation.
+- **class_eval.rb**: [Day 3/class_eval.rb](Day%203/class_eval.rb) — Examples of using `class_eval` for dynamic class modification, attribute generation, and a mini router DSL.
+- **instance_eval.rb**: [Day 3/instance_eval.rb](Day%203/instance_eval.rb) — Examples of `instance_eval` for object context execution, dynamic method calls, and configuration DSLs.
+- **meta_programming.rb**: [Day 3/meta_programming.rb](Day%203/meta_programming.rb) — Metaprogramming challenges: `send`, `define_method`, `method_missing`, and DSL-style configuration.
+
+**Usage**
+
+- View the markdown files in your editor or on GitHub via the links above.
+- Run the Ruby examples locally with:
+
+```bash
+ruby "Day 1/iterator.rb"
+ruby "Day 2/block.rb"
+ruby "Day 2/proc.rb"
+ruby "Day 2/lambda.rb"
+ruby "Day 2/closure.rb"
+ruby "Day 3/class_eval.rb"
+ruby "Day 3/instance_eval.rb"
+ruby "Day 3/meta_programming.rb"
+```
+
 **Contributing / Next steps**
 
 - Add more days or exercises as new files under the appropriate `Day N/` folder.
