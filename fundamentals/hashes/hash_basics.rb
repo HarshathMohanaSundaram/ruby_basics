@@ -86,3 +86,42 @@ data = {
 
 p data[:user][:address][:city]
 p data.dig(:user, :address, :city)
+
+
+users = {
+  alice: 25,
+  bob: 17,
+  charlie: 30,
+  david: 15
+}
+
+p users.select { |_, age| age>=18 }
+p users.transform_values { |age| age +=5 }
+p users.transform_keys { |name| name.to_s.upcase }
+p users.invert
+p users.merge({eve: 20})
+
+
+# default_proc
+h = Hash.new { |hash, key| hash[key] = [] }
+h[:ruby] << "arrays"
+h[:ruby] << "hashes"
+
+p h
+
+# without default_proc
+# h2 = Hash.new
+# h2[:ruby] << "arrays"
+# h2[:ruby] << "hashes"
+# p h2
+
+# hash_basics.rb:114:in `<main>': undefined method `<<' for nil (NoMethodError)
+
+# h2[:ruby] << "arrays"
+
+numbers = [1,2,3,4,5,6]
+
+p numbers.group_by { |n| n.even? }
+words = ["apple", "bat", "ball", "cat"]
+
+p words.group_by { |w| w.length }
