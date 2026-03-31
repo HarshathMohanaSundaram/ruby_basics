@@ -125,3 +125,43 @@ p numbers.group_by { |n| n.even? }
 words = ["apple", "bat", "ball", "cat"]
 
 p words.group_by { |w| w.length }
+
+person = {
+  name: "Harshath",
+  age: 25,
+  city: "Chennai",
+  country: "India"
+}
+
+p person.slice(:name, :city)
+p person
+
+p person.except(:name, :age)
+p person
+
+data = {
+  name: "Harshath",
+  age: nil,
+  city: "Chennai"
+}
+
+p data.compact
+p data
+p data.compact!
+p data
+
+h1 = {
+  user: {
+    name: "Harshath"
+  }
+}
+
+h2 = {
+  user: {
+    age: 25
+  }
+}
+
+p h1.merge(h2)
+require "active_support/core_ext/hash/deep_merge"
+p h1.deep_merge(h2)
