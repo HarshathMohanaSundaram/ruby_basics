@@ -83,6 +83,10 @@ In-depth examples and documentation on core Ruby data structures, organized by t
 - **hash_operations.md**: [fundamentals/hashes/hash_operations.md](fundamentals/hashes/hash_operations.md) — Comprehensive reference for Ruby Hash operations (creation, access, merge, transform, filter, dig, default_proc, slice, except, compact, deep_merge, and more).
 - **hash_basics.rb**: [fundamentals/hashes/hash_basics.rb](fundamentals/hashes/hash_basics.rb) — Hash creation, access, merge vs merge!, transform_keys/values, select, reject, invert, dig, default_proc, group_by, slice, except, compact, and deep_merge.
 
+**Enumerable** (`fundamentals/enumerable/`)
+- **enumerable_operations.md**: [fundamentals/enumerable/enumerable_operations.md](fundamentals/enumerable/enumerable_operations.md) — Comprehensive reference for Ruby Enumerable methods (map, select, reject, find, reduce, group_by, each_with_object, predicates, aggregation, and more).
+- **enumerable.rb**: [fundamentals/enumerable/enumerable.rb](fundamentals/enumerable/enumerable.rb) — Examples of map, select, reject, find, reduce, group_by, each_with_object, and using Enumerable on hashes.
+
 **Usage**
 
 ```bash
@@ -96,6 +100,7 @@ ruby fundamentals/arrays/custom_reduce.rb
 ruby fundamentals/arrays/enumerator.rb
 ruby fundamentals/arrays/lazy_enumerator.rb
 ruby fundamentals/hashes/hash_basics.rb
+ruby fundamentals/enumerable/enumerable.rb
 ```
 
 
