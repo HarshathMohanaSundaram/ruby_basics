@@ -1,12 +1,12 @@
 # Ruby Basics — Learning Notes
 
 
-Small collection of learning notes and example code for Ruby basics (Day 1 & Day 2).
+Small collection of learning notes and example code for Ruby basics.
 
 
 **Project Overview**
 
-- **Purpose**: Short, self-contained notes and example code to practise Ruby enumerators, iteration, blocks, procs, lambdas, closures, and related concepts.
+- **Purpose**: Short, self-contained notes and example code to practise Ruby fundamentals — arrays, hashes, enumerators, iteration, blocks, procs, lambdas, closures, metaprogramming, and related concepts.
 - **Where to read**: Open the linked files below in your editor or view them on GitHub.
 
 
@@ -60,7 +60,47 @@ ruby "Day 3/instance_eval.rb"
 ruby "Day 3/meta_programming.rb"
 ```
 
+
+---
+
+**Fundamentals**
+
+In-depth examples and documentation on core Ruby data structures, organized by topic.
+
+**Arrays** (`fundamentals/arrays/`)
+- **array_operations.md**: [fundamentals/arrays/array_operations.md](fundamentals/arrays/array_operations.md) — Comprehensive reference for Ruby Array operations (creation, access, add/remove, search, filter, transform, sort, iterate, enumerators, and lazy evaluation).
+- **array_basics.rb**: [fundamentals/arrays/array_basics.rb](fundamentals/arrays/array_basics.rb) — Array creation, access, and core methods.
+- **basic_operations.rb**: [fundamentals/arrays/basic_operations.rb](fundamentals/arrays/basic_operations.rb) — Common array operations (push, pop, shift, unshift, etc.).
+- **iteration.rb**: [fundamentals/arrays/iteration.rb](fundamentals/arrays/iteration.rb) — Iterating arrays with `each`, `each_with_index`, `each_with_object`.
+- **custom_each.rb**: [fundamentals/arrays/custom_each.rb](fundamentals/arrays/custom_each.rb) — Building a custom `each` method.
+- **custom_map.rb**: [fundamentals/arrays/custom_map.rb](fundamentals/arrays/custom_map.rb) — Building a custom `map` method.
+- **custom_select.rb**: [fundamentals/arrays/custom_select.rb](fundamentals/arrays/custom_select.rb) — Building a custom `select` method.
+- **custom_reduce.rb**: [fundamentals/arrays/custom_reduce.rb](fundamentals/arrays/custom_reduce.rb) — Building a custom `reduce` method.
+- **enumerator.rb**: [fundamentals/arrays/enumerator.rb](fundamentals/arrays/enumerator.rb) — Enumerator creation and usage with arrays.
+- **lazy_enumerator.rb**: [fundamentals/arrays/lazy_enumerator.rb](fundamentals/arrays/lazy_enumerator.rb) — Lazy evaluation with arrays and infinite sequences.
+
+**Hashes** (`fundamentals/hashes/`)
+- **hash_operations.md**: [fundamentals/hashes/hash_operations.md](fundamentals/hashes/hash_operations.md) — Comprehensive reference for Ruby Hash operations (creation, access, merge, transform, filter, dig, default_proc, slice, except, compact, deep_merge, and more).
+- **hash_basics.rb**: [fundamentals/hashes/hash_basics.rb](fundamentals/hashes/hash_basics.rb) — Hash creation, access, merge vs merge!, transform_keys/values, select, reject, invert, dig, default_proc, group_by, slice, except, compact, and deep_merge.
+
+**Usage**
+
+```bash
+ruby fundamentals/arrays/array_basics.rb
+ruby fundamentals/arrays/basic_operations.rb
+ruby fundamentals/arrays/iteration.rb
+ruby fundamentals/arrays/custom_each.rb
+ruby fundamentals/arrays/custom_map.rb
+ruby fundamentals/arrays/custom_select.rb
+ruby fundamentals/arrays/custom_reduce.rb
+ruby fundamentals/arrays/enumerator.rb
+ruby fundamentals/arrays/lazy_enumerator.rb
+ruby fundamentals/hashes/hash_basics.rb
+```
+
+
 **Contributing / Next steps**
 
 - Add more days or exercises as new files under the appropriate `Day N/` folder.
+- Add more fundamentals topics under the `fundamentals/` folder.
 
