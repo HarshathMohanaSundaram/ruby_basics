@@ -10,6 +10,7 @@ Small collection of learning notes and example code for Ruby basics.
 - **Where to read**: Open the linked files below in your editor or view them on GitHub.
 
 
+
 **Files**
 
 - **Day1.md**: [Day 1/Day1.md](Day%201/Day1.md) — Day 1 notes, concepts covered, and exercises.
@@ -23,6 +24,10 @@ Small collection of learning notes and example code for Ruby basics.
 - **lambda.rb**: [Day 2/lambda.rb](Day%202/lambda.rb) — Lambda creation, validation, and strictness.
 - **closure.rb**: [Day 2/closure.rb](Day%202/closure.rb) — Closures, stateful functions, encapsulation, and custom map/delay patterns.
 
+**Loops**
+- **loop_basics.md**: [fundamentals/loops/loop_basics.md](fundamentals/loops/loop_basics.md) — Comprehensive documentation of Ruby looping constructs, usage, and alternatives.
+- **loop_basics.rb**: [fundamentals/loops/loop_basics.rb](fundamentals/loops/loop_basics.rb) — Example Ruby script demonstrating all basic loop types with inline comments.
+
 
 **Usage**
 
@@ -35,6 +40,7 @@ ruby "Day 2/block.rb"
 ruby "Day 2/proc.rb"
 ruby "Day 2/lambda.rb"
 ruby "Day 2/closure.rb"
+ruby "fundamentals/loops/loop_basics.rb"
 ```
 
 
