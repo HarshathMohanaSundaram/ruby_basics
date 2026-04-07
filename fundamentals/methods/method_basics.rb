@@ -88,3 +88,22 @@ print_info(name: "Harshath", age: 25, city: "Bangalore")
 # name: Harshath
 # age: 25
 # city: Bangalore
+
+
+# Block
+def greet_with_block
+  yield if block_given?
+end
+greet_with_block do
+  puts "Welcome to Ruby programming! Harshath"
+end
+
+# Output:
+# Welcome to Ruby programming! Harshath
+
+# Block with arguments
+def greet
+  yield("Harshath")
+end
+
+greet { |name| puts "Hello #{name}" }
