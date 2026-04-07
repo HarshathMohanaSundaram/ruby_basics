@@ -4,6 +4,8 @@ end
 
 greet
 
+puts "\n--- Method With Arguments ---"
+
 
 # Output:
 # Hello Harshath
@@ -14,6 +16,10 @@ def greet(name)
 end
 
 greet("Harshath")
+# Output:
+# Hello Harshath
+
+puts "\n--- Return Value ---"
 # Output:
 # Hello Harshath
 
@@ -28,12 +34,21 @@ puts add(2, 3)
 # Output:
 # 5
 
+puts "\n--- Method with Default Arguments ---"
+# Output:
+# 5
+
 # Method with Default Arguments
 def greet(name = "Guest")
   puts "Hello #{name}"
 end
 greet
 greet("Harshath")
+# Output:
+# Hello Guest
+# Hello Harshath
+
+puts "\n--- Multiple Arguments ---"
 # Output:
 # Hello Guest
 # Hello Harshath
@@ -47,6 +62,10 @@ puts full_name("Harshath", "S M")
 # Output:
 # Harshath S M
 
+puts "\n--- Keyword Arguments ---"
+# Output:
+# Harshath S M
+
 
 # Keyword Arguments
 def create_user(name:, age:)
@@ -54,6 +73,10 @@ def create_user(name:, age:)
 end
 
 puts create_user(name: "Harshath", age: 25)
+# Output:
+# Name: Harshath, Age: 25
+
+puts "\n--- Default Keyword Arguments ---"
 # Output:
 # Name: Harshath, Age: 25
 
@@ -67,12 +90,21 @@ puts create_user(name: "Harshath", age: 25)
 # Name: Guest, Age: 0
 # Name: Harshath, Age: 25
 
+puts "\n--- Splat Args ---"
+# Output:
+# Name: Guest, Age: 0
+# Name: Harshath, Age: 25
+
 
 # Splat Args
 def sum(*numbers)
   numbers.sum
 end
 puts sum(1, 2, 3, 4)
+# Output:
+# 10
+
+puts "\n--- Double splat for keyword arguments ---"
 # Output:
 # 10
 
@@ -84,6 +116,12 @@ def print_info(**info)
 end
 
 print_info(name: "Harshath", age: 25, city: "Bangalore")
+# Output:
+# name: Harshath
+# age: 25
+# city: Bangalore
+
+puts "\n--- Block ---"
 # Output:
 # name: Harshath
 # age: 25
@@ -101,6 +139,8 @@ end
 # Output:
 # Welcome to Ruby programming! Harshath
 
+puts "\n--- Block with arguments ---"
+
 # Block with arguments
 def greet
   yield("Harshath")
@@ -108,10 +148,14 @@ end
 
 greet { |name| puts "Hello #{name}" }
 
+puts "\n--- Procs ---"
+
 # Procs:
 square = Proc.new { |n| n * n }
 
 puts square.call(5)
+
+puts "\n--- Proc return behavior ---"
 
 # Procs can also return from the method they are defined in, which can lead to unexpected behavior:
 
@@ -123,6 +167,8 @@ end
 
 puts test
 
+puts "\n--- Lambdas ---"
+
 # Output:
 # from proc
 # In this example, the `return` statement inside the Proc causes the entire `test` method to return immediately, which is why "after proc" is never printed.
@@ -131,6 +177,8 @@ puts test
 square_lambda = ->(n) { n * n }
 
 puts square_lambda.call(5)
+
+puts "\n--- Lambda return behavior ---"
 
 # Lambdas do not have the same behavior with return statements as Procs. A `return` inside a lambda will only exit the lambda, not the enclosing method:
 
