@@ -93,6 +93,11 @@ In-depth examples and documentation on core Ruby data structures, organized by t
 - **enumerable_operations.md**: [fundamentals/enumerable/enumerable_operations.md](fundamentals/enumerable/enumerable_operations.md) — Comprehensive reference for Ruby Enumerable methods (map, select, reject, find, reduce, group_by, each_with_object, predicates, aggregation, and more).
 - **enumerable.rb**: [fundamentals/enumerable/enumerable.rb](fundamentals/enumerable/enumerable.rb) — Examples of map, select, reject, find, reduce, group_by, each_with_object, and using Enumerable on hashes.
 
+**Methods** (`fundamentals/methods/`)
+- **methods.md**: [fundamentals/methods/methods.md](fundamentals/methods/methods.md) — Comprehensive documentation and examples for all Ruby methods in this directory.
+- **method_basics.rb**: [fundamentals/methods/method_basics.rb](fundamentals/methods/method_basics.rb) — Ruby method basics, arguments, return values, blocks, procs, and lambdas.
+- **practice_exercise.rb**: [fundamentals/methods/practice_exercise.rb](fundamentals/methods/practice_exercise.rb) — Ruby script for method practice exercises.
+
 **Usage**
 
 ```bash
@@ -107,6 +112,8 @@ ruby fundamentals/arrays/enumerator.rb
 ruby fundamentals/arrays/lazy_enumerator.rb
 ruby fundamentals/hashes/hash_basics.rb
 ruby fundamentals/enumerable/enumerable.rb
+ruby fundamentals/methods/method_basics.rb
+ruby fundamentals/methods/practice_exercise.rb
 ```
 
 
