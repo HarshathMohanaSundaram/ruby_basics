@@ -113,6 +113,8 @@ square = Proc.new { |n| n * n }
 
 puts square.call(5)
 
+# Procs can also return from the method they are defined in, which can lead to unexpected behavior:
+
 def test
   p = Proc.new { return "from proc" }
   p.call
@@ -120,5 +122,28 @@ def test
 end
 
 puts test
+
+# Output:
+# from proc
+# In this example, the `return` statement inside the Proc causes the entire `test` method to return immediately, which is why "after proc" is never printed.
+
+# Lambdas:
+square_lambda = ->(n) { n * n }
+
+puts square_lambda.call(5)
+
+# Lambdas do not have the same behavior with return statements as Procs. A `return` inside a lambda will only exit the lambda, not the enclosing method:
+
+def test_lambda
+  l = -> { return "from lambda" }
+  l.call
+  "after lambda"
+end
+
+puts test_lambda
+
+# Output:
+# from lambda
+# after lambda
 
 
