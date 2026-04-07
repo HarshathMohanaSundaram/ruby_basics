@@ -48,3 +48,21 @@ puts full_name("Harshath", "S M")
 # Harshath S M
 
 
+# Keyword Arguments
+def create_user(name:, age:)
+  "Name: #{name}, Age: #{age}"
+end
+
+create_user(name: "Harshath", age: 25)
+# Output:
+# Name: Harshath, Age: 25
+
+# Default Keyword Arguments
+def create_user(name: "Guest", age: 0)
+  "Name: #{name}, Age: #{age}"
+end
+create_user
+create_user(name: "Harshath", age: 25)
+# Output:
+# Name: Guest, Age: 0
+# Name: Harshath, Age: 25
