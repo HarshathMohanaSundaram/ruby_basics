@@ -53,7 +53,7 @@ def create_user(name:, age:)
   "Name: #{name}, Age: #{age}"
 end
 
-create_user(name: "Harshath", age: 25)
+puts create_user(name: "Harshath", age: 25)
 # Output:
 # Name: Harshath, Age: 25
 
@@ -61,8 +61,30 @@ create_user(name: "Harshath", age: 25)
 def create_user(name: "Guest", age: 0)
   "Name: #{name}, Age: #{age}"
 end
-create_user
-create_user(name: "Harshath", age: 25)
+puts create_user
+puts create_user(name: "Harshath", age: 25)
 # Output:
 # Name: Guest, Age: 0
 # Name: Harshath, Age: 25
+
+
+# Splat Args
+def sum(*numbers)
+  numbers.sum
+end
+puts sum(1, 2, 3, 4)
+# Output:
+# 10
+
+# Double splat for keyword arguments
+def print_info(**info)
+  info.each do |key, value|
+    puts "#{key}: #{value}"
+  end
+end
+
+print_info(name: "Harshath", age: 25, city: "Bangalore")
+# Output:
+# name: Harshath
+# age: 25
+# city: Bangalore
