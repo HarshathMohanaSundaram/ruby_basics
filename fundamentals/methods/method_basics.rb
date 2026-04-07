@@ -107,3 +107,18 @@ def greet
 end
 
 greet { |name| puts "Hello #{name}" }
+
+# Procs:
+square = Proc.new { |n| n * n }
+
+puts square.call(5)
+
+def test
+  p = Proc.new { return "from proc" }
+  p.call
+  "after proc"
+end
+
+puts test
+
+
