@@ -27,3 +27,24 @@ end
 puts add(2, 3)
 # Output:
 # 5
+
+# Method with Default Arguments
+def greet(name = "Guest")
+  puts "Hello #{name}"
+end
+greet
+greet("Harshath")
+# Output:
+# Hello Guest
+# Hello Harshath
+
+# Multiple Arguments
+def full_name(first, last)
+  "#{first} #{last}"
+end
+
+puts full_name("Harshath", "S M")
+# Output:
+# Harshath S M
+
+
